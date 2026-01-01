@@ -6,9 +6,9 @@
 :root {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.5;
-  color-scheme:dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #111827;
+  color-scheme: light;
+  color: #1f2937;
+  background-color: #f9fafb;
 }
 
 #changinges {

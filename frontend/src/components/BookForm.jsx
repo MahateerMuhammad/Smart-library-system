@@ -54,71 +54,71 @@ const BookForm = ({ onAddBook }) => {
     };
 
     return (
-        <div className="bg-gray-800 p-6 rounded-lg border border-gray-700">
-            <h2 className="text-xl font-bold mb-6 text-white">Add New Book</h2>
+        <div className="bg-white p-6 rounded-lg border border-gray-300 shadow-sm">
+            <h2 className="text-xl font-bold mb-6 text-gray-900">Add New Book</h2>
 
             {error && (
-                <div className="bg-red-900/50 border border-red-700 text-red-300 p-3 rounded mb-4 text-sm">
+                <div className="bg-red-50 border border-red-300 text-red-700 p-3 rounded mb-4 text-sm">
                     {error}
                 </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-1.5">
-                        Title <span className="text-red-400">*</span>
+                    <label className="block text-gray-700 text-sm font-medium mb-1.5">
+                        Title <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="text"
                         name="title"
                         value={formData.title}
                         onChange={handleChange}
-                        className="w-full bg-gray-900 border border-gray-600 rounded p-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                        className="w-full bg-white border border-gray-300 rounded p-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                         placeholder="Enter book title"
                         disabled={loading}
                     />
                 </div>
 
                 <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-1.5">
-                        Author <span className="text-red-400">*</span>
+                    <label className="block text-gray-700 text-sm font-medium mb-1.5">
+                        Author <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="text"
                         name="Author"
                         value={formData.Author}
                         onChange={handleChange}
-                        className="w-full bg-gray-900 border border-gray-600 rounded p-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                        className="w-full bg-white border border-gray-300 rounded p-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                         placeholder="Enter author name"
                         disabled={loading}
                     />
                 </div>
 
                 <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-1.5">
-                        ISBN Number <span className="text-red-400">*</span>
+                    <label className="block text-gray-700 text-sm font-medium mb-1.5">
+                        ISBN Number <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="text"
                         name="ISBNnumber"
                         value={formData.ISBNnumber}
                         onChange={handleChange}
-                        className="w-full bg-gray-900 border border-gray-600 rounded p-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                        className="w-full bg-white border border-gray-300 rounded p-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                         placeholder="Enter ISBN number"
                         disabled={loading}
                     />
                 </div>
 
                 <div>
-                    <label className="block text-gray-300 text-sm font-medium mb-1.5">
-                        Published Year <span className="text-red-400">*</span>
+                    <label className="block text-gray-700 text-sm font-medium mb-1.5">
+                        Published Year <span className="text-red-600">*</span>
                     </label>
                     <input
                         type="number"
                         name="publishedYear"
                         value={formData.publishedYear}
                         onChange={handleChange}
-                        className="w-full bg-gray-900 border border-gray-600 rounded p-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+                        className="w-full bg-white border border-gray-300 rounded p-2.5 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                         placeholder="Enter published year"
                         min="1000"
                         max={new Date().getFullYear()}

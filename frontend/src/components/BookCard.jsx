@@ -17,18 +17,18 @@ const BookCard = ({ book, onDelete }) => {
     };
 
     return (
-        <div className="bg-gray-800 border border-gray-700 rounded-lg p-5 hover:border-gray-600 transition">
+        <div className="bg-white border border-gray-300 rounded-lg p-5 hover:border-gray-400 transition shadow-sm">
             <div className="mb-3">
-                <h3 className="text-lg font-semibold text-white mb-2">{book.title}</h3>
-                <p className="text-gray-400 text-sm">by {book.Author}</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{book.title}</h3>
+                <p className="text-gray-600 text-sm">by {book.Author}</p>
             </div>
 
             <div className="space-y-1.5 mb-4 text-sm">
-                <p className="text-gray-400">
-                    <span className="font-medium">ISBN:</span> <span className="text-gray-300 font-mono">{book.ISBNnumber}</span>
+                <p className="text-gray-600">
+                    <span className="font-medium">ISBN:</span> <span className="text-gray-800 font-mono">{book.ISBNnumber}</span>
                 </p>
-                <p className="text-gray-400">
-                    <span className="font-medium">Year:</span> <span className="text-gray-300">{book.publishedYear}</span>
+                <p className="text-gray-600">
+                    <span className="font-medium">Year:</span> <span className="text-gray-800">{book.publishedYear}</span>
                 </p>
             </div>
 

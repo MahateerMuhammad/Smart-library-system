@@ -9,7 +9,8 @@ Project Description:
 
 
 Frontend React : 
-    
+    npx create vite@latest
+    npm install    
     for running frontend npm run dev
 
 Backend + Express :
@@ -21,7 +22,8 @@ Backend + Express :
     env file for backend containing following structure: 
         PORT= Port of your choice 5000 in my case
         MONGODB_URI= Your mongodb uri
-    
+
+
 
 
 
